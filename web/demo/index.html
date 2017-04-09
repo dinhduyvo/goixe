@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../asset/js/datepicker/bootstrap-datepicker3.min.css">
+    <!-- jQuery library -->
+    <script src="../asset/js/jquery.min.js"></script>
+    <script src="../asset/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../asset/js/datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="../asset/js/datepicker/bootstrap-datepicker.vi.min.js"></script>
+    <!-- Select2 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">TimVeXe</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Trang chủ</a></li>
+        <li><a href="#">Hướng dẫn</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h3 class="text-center">THUÊ MỘT CHIẾC XE TỐT, CÓ MỘT CHUYẾN ĐI VUI.</h3>
+    <p class="text-center">Hàng trăm chiếc xe và các tài xế đầy kinh nghiệm sẵn sàng đưa bạn đi mọi nơi!</p>
+    <div class="panel panel-primary">
+      <div class="panel-heading"><span class="glyphicon glyphicon-search"></span> Tìm kiếm</div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-sm-2">
+            <select class="js-example-basic-multiple noidi" multiple="multiple" style="width: 100%;">
+              <option value="AL">Đường Lý Tự Trọng - Cần Thơ</option>
+              <option value="WY">Đường 30/4 - Cần Thơ</option>
+            </select>
+            <script type="text/javascript">
+            $(".noidi").select2(
+              {
+                placeholder: "Chọn nơi đi"
+              }
+            );
+            </script>
+          </div>
+          <div class="col-sm-2">
+            <select class="js-example-basic-multiple noiden" multiple="multiple" style="width: 100%;">
+              <option value="AL">Đường Lý Tự Trọng - Cần Thơ</option>
+              <option value="WY">Đường 30/4 - Cần Thơ</option>
+            </select>
+            <script type="text/javascript">
+            $(".noiden").select2(
+              {
+                placeholder: "Chọn nơi đến"
+              }
+            );
+            </script>
+          </div>
+          <div class="col-sm-2">
+            <select class="js-example-basic-single hinhthucdi" style="width: 100%;">
+              <option value=""></option>
+              <option value="AL">1 chiều</option>
+              <option value="WY">Khứ hồi</option>
+            </select>
+            <script type="text/javascript">
+            $(".hinhthucdi").select2({
+              placeholder: "Hình thức đi",
+              allowClear: true
+            });
+            </script>
+          </div>
+          <div class="col-sm-2">
+            <input data-provide="datepicker" class="datepicker">
+            <script type="text/javascript">
+              $('.datepicker').datepicker();
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
